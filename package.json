@@ -1,0 +1,21 @@
+{
+  "name": "monorepo-apps",
+  "version": "0.0.1",
+  "license": "MIT",
+  "private": true,
+  "workspaces": {
+    "packages": [
+      "apps/*",
+      "packages/*"
+    ],
+    "nohoist": [
+      "**/react",
+      "**/react-dom",
+      "**/react-native",
+      "**/react-native/**"
+    ]
+  },
+  "scripts": {
+    "reset": "find . -type dir -name node_modules | xargs rm -rf && rm -rf yarn.lock"
+  }
+}
