@@ -1,0 +1,39 @@
+{
+  "name": "@monorepo-apps/my-app",
+  "version": "0.0.1",
+  "private": true,
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
+  "types": "dist/cjs/index.d.ts",
+  "react-native": "src/index",
+  "source": "src/index",
+  "scripts": {
+    "build": "rollup -c",
+    "build:watch": "yarn build --watch",
+    "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
+    "lint:no-cycles": "yarn lint --rule 'import/no-cycle: 2'"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@monorepo-apps/eslint-config": "*",
+    "@monorepo-apps/ui": "*",
+    "@react-native-community/eslint-config": "^3.1.0",
+    "@rollup/plugin-commonjs": "^22.0.2",
+    "@rollup/plugin-node-resolve": "^14.1.0",
+    "@rollup/plugin-typescript": "^8.5.0",
+    "@types/react": "^18.0.20",
+    "@types/react-native": "^0.70.0",
+    "@typescript-eslint/eslint-plugin": "^5.37.0",
+    "@typescript-eslint/parser": "^5.37.0",
+    "eslint": "^8.23.1",
+    "react": "18.1.0",
+    "react-native": "0.70.1",
+    "rollup": "^2.79.0",
+    "tslib": "^2.4.0",
+    "typescript": "^4.8.3"
+  },
+  "peerDependencies": {
+    "react": "*",
+    "react-native": "*"
+  }
+}
