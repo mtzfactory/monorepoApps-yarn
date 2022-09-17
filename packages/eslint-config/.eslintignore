@@ -1,0 +1,10 @@
+.cache
+node_modules
+
+# Build outputs
+dist
+lib
+
+# Remix
+build
+public/build

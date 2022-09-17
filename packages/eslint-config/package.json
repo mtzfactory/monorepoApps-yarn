@@ -1,0 +1,46 @@
+{
+  "name": "@monorepo-apps/eslint-config",
+  "version": "0.0.1",
+  "description": "Eslint configuration library for Rated People's projects done with React",
+  "repository": "https://bitbucket.org/ratedpeople/trades-app",
+  "author": "Rated People <mobile@ratedpeople.com> (https://bitbucket.org/ratedpeople)",
+  "private": true,
+  "main": "index.js",
+  "files": [
+    ".vscode",
+    ".editorconfig",
+    ".eslintignore",
+    ".eslintrc.json",
+    "index.js",
+    "package.json",
+    "prettier.config.js"
+  ],
+  "scripts": {
+    "build": "echo \"No build process for eslint-config package needed.\"",
+    "lint": "eslint .",
+    "lint:no-cycles": "yarn lint --rule 'import/no-cycle: 2'",
+    "test": "echo \"No need for test for eslint-config package.\""
+  },
+  "dependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.36.1",
+    "@typescript-eslint/parser": "^5.36.1",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-config-standard": "^17.0.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-n": "^15.2.5",
+    "eslint-plugin-promise": "^6.0.1",
+    "eslint-plugin-react": "^7.31.6",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-sort-keys-fix": "^1.1.2"
+  },
+  "devDependencies": {
+    "eslint": "^8.23.0",
+    "prettier": "^2.7.1",
+    "typescript": "^4.8.2"
+  },
+  "peerDependencies": {
+    "eslint": "*",
+    "prettier": "*",
+    "typescript": "*"
+  }
+}
