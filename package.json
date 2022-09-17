@@ -16,6 +16,11 @@
     ]
   },
   "scripts": {
-    "reset": "find . -type dir -name node_modules | xargs rm -rf && rm -rf yarn.lock"
+    "lint": "yarn workspaces run lint",
+    "lint:no-cycles": "yarn workspaces run lint:no-cycles",
+    "mobile": "yarn workspace @monorepo-apps/mobile",
+    "reset": "find . -type dir -name node_modules | xargs rm -rf && rm -rf yarn.lock",
+    "my-app": "yarn workspace @monorepo-apps/my-app",
+    "ui": "yarn workspace @monorepo-apps/ui"
   }
 }
