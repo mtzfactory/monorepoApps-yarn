@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Description Renders as expected 1`] = `
+<Text
+  style={
+    [
+      undefined,
+      {
+        "color": undefined,
+        "fontSize": undefined,
+      },
+    ]
+  }
+>
+  Lorem ipsum
+</Text>
+`;
