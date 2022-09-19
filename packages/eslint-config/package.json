@@ -1,9 +1,6 @@
 {
   "name": "@monorepo-apps/eslint-config",
   "version": "0.0.1",
-  "description": "Eslint configuration library for Rated People's projects done with React",
-  "repository": "https://bitbucket.org/ratedpeople/trades-app",
-  "author": "Rated People <mobile@ratedpeople.com> (https://bitbucket.org/ratedpeople)",
   "private": true,
   "main": "index.js",
   "files": [
@@ -34,9 +31,9 @@
     "eslint-plugin-sort-keys-fix": "^1.1.2"
   },
   "devDependencies": {
-    "eslint": "^8.23.0",
+    "eslint": "^8.23.1",
     "prettier": "^2.7.1",
-    "typescript": "^4.8.2"
+    "typescript": "^4.8.3"
   },
   "peerDependencies": {
     "eslint": "*",
